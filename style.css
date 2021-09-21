@@ -1,0 +1,233 @@
+/* =========== Custom Css ========== */
+h1,h2,h3,h4,h5,h6,p,ul,li,ol{
+    margin: 0;
+    padding: 0;
+}
+.web_text{
+    margin-bottom: 50px;
+}
+.web_text h5{
+    font-size: 17px;
+    color: #969fee;
+}
+.web_text h2{
+    font-size: 35px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.web_text h2::after{
+    content:"";
+    position: absolute;
+    left: 50%;
+    top: 150%;
+    height: 3px;
+    width: 50px;
+    background-color: #969fee;
+    transform: translateX(-50%);
+}
+.web_text p{
+    width: 41%;
+    margin: auto;
+    color: #656464;
+}
+
+/* =========== Pricing Table ========== */
+
+.pricing_table_area{
+    padding: 80px;
+    background: #f6f9fc;
+}
+.pricing_table_area .card{
+    border: none;
+    padding:40px 50px;
+    transition: .5s;
+    box-shadow: 0 0 10px rgb(221, 221, 221);
+}
+.pricing_table_area .card:hover{
+    background-color: #2f65eb;
+    color: #fff !important;
+}
+.pricing_table_area .web_text{
+    transition: .8s !important;
+}
+.pricing_table_area .card .web_text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.pricing_table_area .card .web_text h6{
+    font-weight: 700;
+    margin-bottom: 34px;
+}
+.pricing_table_area .card .web_text h2{
+    font-size: 35px;
+}
+.pricing_table_area .card .web_text h2::after{
+    top: 200%;
+    background: #ddd;
+    width: 62%;
+    height: 2px;
+}
+.pricing_table_area .card:hover h2::after{
+    background-color:#ddd;
+}
+.pricing_table_area .card .card-body{
+    text-align: center;
+}
+.pricing_table_area .card span{
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    color: #737373;
+    padding: 8px;
+}
+.pricing_table_area .card:hover span{
+    color: #fff;
+}
+.pricing_table_area .card.btn-primary{
+    transition: .5 !important;
+}
+.pricing_table_area .card .btn-primary:hover{
+    color: #fff !important;
+}
+.pricing_table_area .card:hover .btn-primary{
+    background-color: #fff;
+    color: #2f65eb;
+    border: transparent !important;
+    position: relative;
+    z-index: 2;
+}
+.pricing_table_area .card .btn-primary::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #2f65eb;
+    z-index: -1;
+    height: 100%;
+    width: 0;
+    border-radius: 50px;
+    visibility: hidden;
+    transition: .5s !important;
+}
+.pricing_table_area .card .btn-primary:hover::after{
+    width: 100%;
+    visibility: visible;
+}
+
+/* =========== LFWF Free Lite Area ========== */
+
+.lfwf_free_lite_license{
+    height: 500px;
+    background: url(/Image/free-bg.jpg) no-repeat center center;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.lfwf_free_lite_license::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1753ebc4;
+    z-index: -1;
+}
+.lfwf_free_lite_license .web_text{
+    width: 600px;
+    margin: auto;
+}
+.lfwf_free_lite_license .web_text h5{
+    color: #fff;
+}
+.lfwf_free_lite_license .web_text h2::after{
+    top: 142%;
+    background-color: rgba(255, 255, 255, 0.72);
+    height: 2px;
+}
+.lfwf_free_lite_license .web_text p{
+    width: 80%;
+    color: #fff;
+    padding: 25px 0;
+}
+.lfwf_free_lite_license .btn-primary{
+    transition: .5s;
+    background-color: #fff !important;
+    color: #2f65eb;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    font-weight: 500;
+}
+.lfwf_free_lite_license .btn-primary:hover{
+    color: #fff;
+    border: 1px solid #fff;
+}
+.lfwf_free_lite_license .btn-primary::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #2f65eb;
+    z-index: -1;
+    height: 100%;
+    width: 0;
+    border-radius: 50px;
+    visibility: hidden;
+    transition: .5s !important;
+}
+.lfwf_free_lite_license .btn-primary:hover::after{
+    width: 100%;
+    visibility: visible;
+}
+
+/* =========== Subscrib Section ========== */
+
+.subscrib_area{
+    padding: 90px 0;
+    background-color: #f8f9fa;
+}
+.subscrib_area .card-body{
+    background-color: #2f65eb;
+    padding: 50px;
+}
+.subscrib_area .card-body h2{
+    padding: 15px 0;
+}
+.subscrib_area .card-body p{
+    margin-bottom: 30px;
+    width: 55%;
+    font-size: 18px;
+    color: #d2d2d2;
+    font-weight: 500;
+}
+.subscrib_area input{
+    padding: 8px 15px;
+    border: transparent;
+}
+.subscrib_area input[type="Submit"]{
+    background: #2f65eb;
+    color: #fff;
+    border: 1px solid #d2d2d2;
+}
+.subscrib_area .card{
+    box-shadow: 0 0 10px #dcd4d4;
+}
+.subscrib_area .card h5{
+    font-size: 27px;
+    padding: 10px 20px;
+    line-height: 35px;
+}
+.subscrib_area .card .button{
+    margin-top: 165px;
+    padding-left: 22px;
+}
+.subscrib_area .card .button a{}
+
+/* =========== Pricing ========== */
+/* =========== Pricing ========== */
+/* =========== Pricing ========== */
+/* =========== Pricing ========== */
